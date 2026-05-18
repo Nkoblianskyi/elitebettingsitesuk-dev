@@ -53,7 +53,7 @@ export const bettingSites: BettingSite[] = [
     bonus: "Only £5 to Claim £30 Welcome Bonus",
     features: ["Live Betting", "Cash Out", "Best Odds"],
     paymentMethods: ["Visa/Mastercard", "PayPal", "Apple Pay"],
-    link: "https://sports.ladbrokes.com/",
+    link: "https://www.ladbrokes.com/",
     reviews: 5013,
   },
   {
