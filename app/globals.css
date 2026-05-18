@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* EliteBettingSitesUK — clean light editorial theme */
+@layer base {
+  :root {
+    /* Light backgrounds */
+    --background: 210 20% 97%;
+    --foreground: 220 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 12%;
+
+    /* Primary — deep navy */
+    --primary: 222 60% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary — soft slate */
+    --secondary: 214 20% 93%;
+    --secondary-foreground: 222 40% 20%;
+
+    --muted: 214 18% 93%;
+    --muted-foreground: 215 16% 46%;
+
+    /* Accent — rich gold */
+    --accent: 43 85% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 86%;
+    --input: 214 20% 86%;
+    --ring: 43 85% 44%;
+
+    --chart-1: 43 85% 44%;
+    --chart-2: 222 60% 18%;
+    --chart-3: 214 20% 86%;
+    --chart-4: 215 16% 46%;
+    --chart-5: 0 0% 100%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 25% 12%;
+    --sidebar-primary: 222 60% 18%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 18% 93%;
+    --sidebar-accent-foreground: 220 25% 12%;
+    --sidebar-border: 214 20% 86%;
+    --sidebar-ring: 43 85% 44%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+.bg-grid-light {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
